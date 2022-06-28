@@ -36,7 +36,7 @@ const setConfig = (market: string, entryPrice: number, stopLossPrice: number, ta
   // console.log(quoteIncrementDecimals)
   const riskAmount = new Decimal(RISK_PERC).mul(CAPITAL)
   const numberOfTokens = riskAmount.dividedBy(new Decimal(entryPrice).minus(stopLossPrice)).toFixed(quoteIncrementDecimals)
-  const entryPriceTotal = new Decimal(numberOfTokens).mul(entryPrice)
+  const entryPriceTotal = new Decimal(numberOfTokens).mul(entryPrice).round()
   const stopLossTotal = new Decimal(numberOfTokens).mul(stopLossPrice)
   const lossTotal = entryPriceTotal.minus(stopLossTotal)
   const lossPerc = lossTotal.div(entryPriceTotal).mul(100).toFixed(2)
@@ -74,22 +74,37 @@ const setConfig = (market: string, entryPrice: number, stopLossPrice: number, ta
 const printMessage = (config: any) => {
   const message = `Capital: ${config.capital}
 Risk Percent: ${config.riskPerc}
+..
 Market: ${config.market}
-Minimum Base Order Size: ${config.minBaseOrderSize}
-Entry Price: ${config.entryPrice}
-Stop Loss price: ${config.stopLossPrice}
 Risk Amount: ${config.riskAmount}
 Number of Tokens: ${config.numberOfTokens}
+Minimum Base Order Size: ${config.minBaseOrderSize}
+..
+Entry Price: ${config.entryPrice}
 Entry Price Total: ${config.entryPriceTotal}
-Stop Loss Total: ${config.stopLossTotal}
+..
+Stop Loss price: ${config.stopLossPrice}
 Loss Total: ${config.lossTotal}
+Stop Loss Total: ${config.stopLossTotal}
 Loss Percent: ${config.lossPerc}
+..
 Target Price: ${config.targetPrice}
 Target Price Total: ${config.targetPriceTotal}
 Profit Total: ${config.profitTotal}
 Profit Percent: ${config.profitPerc}
+..
 Risk Reward Ration: 1:${config.riskRewardRatio}
-  `
+..
+..
+====> Entry Options
+Limit Order: ${config.entryPrice} @ ${config.numberOfTokens}
+Market Order: ${config.entryPriceTotal}
+..
+====> Exit Options
+Stop Loss Order: ${config.stopLossPrice} @ ${config.numberOfTokens}
+Limit Sell Order: ${config.targetPrice} @ ${config.numberOfTokens}
+
+`
 
   console.log(message)
 }
