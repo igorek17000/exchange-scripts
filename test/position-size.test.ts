@@ -1,6 +1,7 @@
 import { expect, test } from "vitest"
-import { positionSize } from "../src/position-size"
+import { main } from "../src/position-size"
 
 test("#positionSize()", () => {
-  expect(positionSize()).eq(2001)
+  const market = "TEL-USDT"
+  expect(main(market)).eq(2001)
 })
