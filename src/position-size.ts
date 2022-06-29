@@ -21,8 +21,9 @@ export const main = (market: string, entryPrice: number, stopLossPrice: number, 
 
     // check min order amount
 
-    printMessage(config)
-    return 2001
+    // printMessage(config)
+
+    return config
   } catch (error) {
     console.log(error)
   }
@@ -71,7 +72,7 @@ const setConfig = (market: string, entryPrice: number, stopLossPrice: number, ta
   }
 }
 
-const printMessage = (config: any) => {
+export const printMessage = (config: any) => {
   const message = `Capital: ${config.capital}
 Risk Percent: ${config.riskPerc}
 ..
