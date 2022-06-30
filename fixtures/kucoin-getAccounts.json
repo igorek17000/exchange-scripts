@@ -1,0 +1,709 @@
+{
+  "code": "200000",
+  "data": [
+    {
+      "id": "5c6a4c5099a1d81b25b65bf0",
+      "currency": "USDT",
+      "type": "trade",
+      "balance": "349.53682496",
+      "available": "349.53682496",
+      "holds": "0"
+    },
+    {
+      "id": "62bdc7455f0a9a000187314d",
+      "currency": "SAND",
+      "type": "trade",
+      "balance": "96.99033065",
+      "available": "96.99033065",
+      "holds": "0"
+    },
+    {
+      "id": "62bc616857e77b0001ac520a",
+      "currency": "WILD",
+      "type": "trade",
+      "balance": "252.52401462",
+      "available": "252.52401462",
+      "holds": "0"
+    },
+    {
+      "id": "62afac79e621ad00011e9dc1",
+      "currency": "RMRK",
+      "type": "main",
+      "balance": "6.26566294",
+      "available": "6.26566294",
+      "holds": "0"
+    },
+    {
+      "id": "6297e0572cce0b000198ff74",
+      "currency": "USDC",
+      "type": "main",
+      "balance": "3.21707447",
+      "available": "3.21707447",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a501599a1d81c166a70ee",
+      "currency": "BTC",
+      "type": "trade",
+      "balance": "0.00000047",
+      "available": "0.00000047",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4f2199a1d8165a9a54d2",
+      "currency": "NEO",
+      "type": "trade",
+      "balance": "0.00079178",
+      "available": "0.00079178",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a511999a1d817baeebcdb",
+      "currency": "LTC",
+      "type": "trade",
+      "balance": "0.00009154",
+      "available": "0.00009154",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4df199a1d81a34f9d06c",
+      "currency": "VET",
+      "type": "trade",
+      "balance": "0.16158",
+      "available": "0.16158",
+      "holds": "0"
+    },
+    {
+      "id": "5d29d703cbfc7b75b1d3a562",
+      "currency": "EOS",
+      "type": "main",
+      "balance": "0.00298995",
+      "available": "0.00298995",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4b2c99a1d81743eab017",
+      "currency": "ENJ",
+      "type": "trade",
+      "balance": "0.00472",
+      "available": "0.00472",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4b3499a1d8165a7829e6",
+      "currency": "UTK",
+      "type": "trade",
+      "balance": "0.01762984",
+      "available": "0.01762984",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4ca099a1d8182d307f05",
+      "currency": "ETC",
+      "type": "trade",
+      "balance": "0.00013242",
+      "available": "0.00013242",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4b9799a1d8165a7b8550",
+      "currency": "KEY",
+      "type": "trade",
+      "balance": "0.25673335",
+      "available": "0.25673335",
+      "holds": "0"
+    },
+    {
+      "id": "5c6d8dafcbfc7b0fdd336cbe",
+      "currency": "GAS",
+      "type": "main",
+      "balance": "0.00025665",
+      "available": "0.00025665",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4d3599a1d81b25be1730",
+      "currency": "DENT",
+      "type": "trade",
+      "balance": "0.56576425",
+      "available": "0.56576425",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4c1d99a1d816cbace278",
+      "currency": "DGB",
+      "type": "trade",
+      "balance": "0.04948886",
+      "available": "0.04948886",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a49ec99a1d81a34d6e925",
+      "currency": "GAS",
+      "type": "trade",
+      "balance": "0.00016335",
+      "available": "0.00016335",
+      "holds": "0"
+    },
+    {
+      "id": "61d2960ab04bbe0001a1406f",
+      "currency": "DOT",
+      "type": "trade",
+      "balance": "0.00006966",
+      "available": "0.00006966",
+      "holds": "0"
+    },
+    {
+      "id": "5fb23704c58250000635a679",
+      "currency": "BCH",
+      "type": "trade",
+      "balance": "0.00000452",
+      "available": "0.00000452",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4ad599a1d816cba1c285",
+      "currency": "DRGN",
+      "type": "trade",
+      "balance": "0.01553136",
+      "available": "0.01553136",
+      "holds": "0"
+    },
+    {
+      "id": "5f9a8b7a37da1c0006d99ba3",
+      "currency": "OPCT",
+      "type": "main",
+      "balance": "0.008314",
+      "available": "0.008314",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4efe99a1d81a34031d77",
+      "currency": "REQ",
+      "type": "trade",
+      "balance": "0.00226203",
+      "available": "0.00226203",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4b9a99a1d819393ce9aa",
+      "currency": "POWR",
+      "type": "trade",
+      "balance": "0.00141109",
+      "available": "0.00141109",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a510a99a1d817baee12f7",
+      "currency": "KNC",
+      "type": "trade",
+      "balance": "0.00027621",
+      "available": "0.00027621",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a50b099a1d817431a91a1",
+      "currency": "OMG",
+      "type": "trade",
+      "balance": "0.00013192",
+      "available": "0.00013192",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4ccf99a1d81743f905cf",
+      "currency": "KCS",
+      "type": "trade",
+      "balance": "0.00003899",
+      "available": "0.00003899",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a51d899a1d81a341e7a06",
+      "currency": "BCHSV",
+      "type": "trade",
+      "balance": "0.00000452",
+      "available": "0.00000452",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4fda99a1d817bae3c051",
+      "currency": "ACT",
+      "type": "trade",
+      "balance": "0.01174138",
+      "available": "0.01174138",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a50cc99a1d81b25de1795",
+      "currency": "R",
+      "type": "trade",
+      "balance": "0.00452076",
+      "available": "0.00452076",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4eb999a1d816cbc3cd75",
+      "currency": "CV",
+      "type": "trade",
+      "balance": "0.00163032",
+      "available": "0.00163032",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a51a099a1d81a341aad31",
+      "currency": "AMB",
+      "type": "trade",
+      "balance": "0.00139635",
+      "available": "0.00139635",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4eb599a1d81939585869",
+      "currency": "CVC",
+      "type": "trade",
+      "balance": "0.0005946",
+      "available": "0.0005946",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4bf999a1d81a34e85270",
+      "currency": "SNT",
+      "type": "trade",
+      "balance": "0.00057071",
+      "available": "0.00057071",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a49e799a1d817baaf0685",
+      "currency": "NULS",
+      "type": "trade",
+      "balance": "0.00024611",
+      "available": "0.00024611",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a505099a1d81939664dd2",
+      "currency": "AION",
+      "type": "trade",
+      "balance": "0.0002441",
+      "available": "0.0002441",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4a2399a1d81c4f6a3e4f",
+      "currency": "ONION",
+      "type": "trade",
+      "balance": "0.00020456",
+      "available": "0.00020456",
+      "holds": "0"
+    },
+    {
+      "id": "6198e612685a500001dec8c5",
+      "currency": "QRDO",
+      "type": "trade",
+      "balance": "0.00009413",
+      "available": "0.00009413",
+      "holds": "0"
+    },
+    {
+      "id": "61a96488bc90fb00017726c5",
+      "currency": "PRE",
+      "type": "trade",
+      "balance": "0.00009091",
+      "available": "0.00009091",
+      "holds": "0"
+    },
+    {
+      "id": "62a50c8b8d2aad00012d0265",
+      "currency": "AUSD",
+      "type": "trade",
+      "balance": "0.00008944",
+      "available": "0.00008944",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4e6599a1d816cbc0fe40",
+      "currency": "ONT",
+      "type": "trade",
+      "balance": "0.00007918",
+      "available": "0.00007918",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a51de99a1d81a341f0ee3",
+      "currency": "WTC",
+      "type": "trade",
+      "balance": "0.00007631",
+      "available": "0.00007631",
+      "holds": "0"
+    },
+    {
+      "id": "62923b8805536400019f4afe",
+      "currency": "LUNA",
+      "type": "trade",
+      "balance": "0.000076",
+      "available": "0.000076",
+      "holds": "0"
+    },
+    {
+      "id": "6030789ea24f5300067994a2",
+      "currency": "USTC",
+      "type": "trade",
+      "balance": "0.00005466",
+      "available": "0.00005466",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4a7699a1d81c4f6cea1d",
+      "currency": "EOS",
+      "type": "trade",
+      "balance": "0.0000283",
+      "available": "0.0000283",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4e8b99a1d8182d414103",
+      "currency": "QTUM",
+      "type": "trade",
+      "balance": "0.00002098",
+      "available": "0.00002098",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4ada99a1d81c163d4f1a",
+      "currency": "PPT",
+      "type": "trade",
+      "balance": "0.00002078",
+      "available": "0.00002078",
+      "holds": "0"
+    },
+    {
+      "id": "612b7f1e28c55500065e56a4",
+      "currency": "MOVR",
+      "type": "trade",
+      "balance": "0.00001471",
+      "available": "0.00001471",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4d4a99a1d816cbb7987e",
+      "currency": "BTCP",
+      "type": "trade",
+      "balance": "0.00001061",
+      "available": "0.00001061",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4d3299a1d8165a89bac2",
+      "currency": "BCD",
+      "type": "trade",
+      "balance": "0.00000342",
+      "available": "0.00000342",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a519099a1d8182d5c73cf",
+      "currency": "DASH",
+      "type": "trade",
+      "balance": "0.00000168",
+      "available": "0.00000168",
+      "holds": "0"
+    },
+    {
+      "id": "615a7130a3cbf1000689065c",
+      "currency": "LUNC",
+      "type": "trade",
+      "balance": "0.00000097",
+      "available": "0.00000097",
+      "holds": "0"
+    },
+    {
+      "id": "6292a632d4972000015fbd10",
+      "currency": "AUSD",
+      "type": "main",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "61d2962fd111200001eb07aa",
+      "currency": "DOT",
+      "type": "main",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "62bc5eea01c4170001e085dd",
+      "currency": "DYDX",
+      "type": "trade",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "62bb7bede621ad000168d7e1",
+      "currency": "EDG",
+      "type": "main",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "62bb7b4fe621ad0001676975",
+      "currency": "EDG",
+      "type": "trade",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "615a6edd2ca12d0006051cb1",
+      "currency": "ETH",
+      "type": "main",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "615a70d4a3cbf100068866e5",
+      "currency": "ETH",
+      "type": "trade",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "62bca8d001c41700018afe8c",
+      "currency": "FKX",
+      "type": "trade",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "60ebf0848ac34d0006a36ec0",
+      "currency": "HTR",
+      "type": "main",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "60ebef607d44460006addfbd",
+      "currency": "HTR",
+      "type": "trade",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "613d540cc45019000660dd2d",
+      "currency": "KAR",
+      "type": "main",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "613d53f4cdc87b0006fd841a",
+      "currency": "KAR",
+      "type": "trade",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "608f404a58a16b0006e57988",
+      "currency": "KCS",
+      "type": "main",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "60c0d438c213600006f2ef02",
+      "currency": "KCS",
+      "type": "pool",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "629e285dc277860001c10a66",
+      "currency": "KSM",
+      "type": "main",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "629e284eda2144000130d466",
+      "currency": "KSM",
+      "type": "trade",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "62923b16d497200001bf348a",
+      "currency": "LUNA",
+      "type": "main",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "615a714ca3cbf10006892ed7",
+      "currency": "LUNC",
+      "type": "main",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "612b808fc4ef7d0006307f23",
+      "currency": "MOVR",
+      "type": "main",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "61adf4748043ca0001dc48e6",
+      "currency": "NTVRK",
+      "type": "main",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "61adf30765e0960001771022",
+      "currency": "NTVRK",
+      "type": "trade",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "60a08a6691a149000630ca4b",
+      "currency": "PCX",
+      "type": "main",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "60a08b9bd3ef3e0006287bf3",
+      "currency": "PCX",
+      "type": "trade",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "62bb6e6f55dd4e0001fe8baf",
+      "currency": "POLK",
+      "type": "trade",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "61a9647b86742c0001f56d79",
+      "currency": "PRE",
+      "type": "main",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "6198e7a6c8721c00018c404f",
+      "currency": "QRDO",
+      "type": "main",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "62afabeb417b320001a1ac3b",
+      "currency": "RMRK",
+      "type": "trade",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "613f3779e6578c0006e68699",
+      "currency": "SDN",
+      "type": "main",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "613f36f81b08350006dcffd0",
+      "currency": "SDN",
+      "type": "trade",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "62bc90e355dd4e000193ea26",
+      "currency": "SOUL",
+      "type": "trade",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "5c6a4daa99a1d81c165593a6",
+      "currency": "TEL",
+      "type": "trade",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "6297e03b085234000132f463",
+      "currency": "USDC",
+      "type": "trade",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "60307716537d0300062f5c50",
+      "currency": "USDT",
+      "type": "main",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "6030790afdc3c600065cdbf6",
+      "currency": "USTC",
+      "type": "main",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "62b472527363e80001a434b0",
+      "currency": "WELL",
+      "type": "main",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    },
+    {
+      "id": "62b4720a501cb30001e9ddc5",
+      "currency": "WELL",
+      "type": "trade",
+      "balance": "0",
+      "available": "0",
+      "holds": "0"
+    }
+  ]
+}
