@@ -3,7 +3,7 @@ import questions from "questions"
 import { main, printMessage } from "./position-size"
 import { v4 as uuidv4 } from "uuid"
 import api from "kucoin-node-api"
-import { accountBalance } from "./lib/kucoin-util"
+import { accountBalance, sleep } from "./lib/kucoin-util"
 
 // console.log(process.env)
 if (!process.env.KUCOIN_APIKEY || !process.env.KUCOIN_APISECRETKEY || !process.env.KUCOIN_PASSPHRASE) {
@@ -66,7 +66,7 @@ const confirmOrder = async () => {
     printMessage(config)
 
     // check there is enough available balance for this order
-    const accounts = await api.getAccounts()
+    let accounts = await api.getAccounts()
     // console.log(JSON.stringify(accounts, null, 2))
     const usdtAvailableBalance = accountBalance("trade", "USDT", accounts.data)
     if (Number(config!.entryPriceTotal) > usdtAvailableBalance) {
@@ -75,60 +75,89 @@ const confirmOrder = async () => {
       throw new Error("Not enought USDT balance avaialble for this order size.")
     }
 
-    // const confirm = await confirmOrder()
-    // // console.log(confirm)
-    // if (confirm !== "yes") {
-    //   console.log("No order placed. Done.")
-    //   return false
-    // }
+    const confirm = await confirmOrder()
+    // console.log(confirm)
+    if (confirm !== "yes") {
+      console.log("No order placed. Done.")
+      return false
+    }
 
-    /* 
-  Place a new order
-  POST /api/v1/orders
-  Details for market order vs. limit order and params see https://docs.kucoin.com/#place-a-new-order
-  General params
-  params = {
-    clientOid: string
-    side: string ['buy' || 'sell]
-    symbol: string
-    type: string [optional, default: limit]
-    remark: string [optional]
-    stop: string [optional] - either loss or entry and needs stopPrice
-    stopPrice: string [optional] - needed for stop 
-    stp: string [optional] (self trade prevention)
-    price: string,
-    size: string,
-    timeInForce: string [optional, default is GTC]
-    cancelAfter: long (unix time) [optional]
-    hidden: boolean [optional]
-    Iceberg: boolean [optional]
-    visibleSize: string [optional]
-  }
-*/
     const params = {
       clientOid: uuidv4(),
       side: "buy",
       symbol,
       type: "market", // default: limit]
-      size: config!.entryPriceTotal,
+      funds: config!.entryPriceTotal,
     }
-    console.log("Market Order: ", params)
-    // api.placeOrder(params)
+    // console.log(params)
+    console.log(`==> Placing Market Buy Order: ${symbol} $${config!.entryPriceTotal}`)
+    const marketBuyOrder = await api.placeOrder(params)
+    // { code: '200000', data: { orderId: '62bdde4e069bc70001bd59d1' } }
+    // console.log("marketBuyOrder", marketBuyOrder)
+
+    if (!marketBuyOrder.code || Number(marketBuyOrder.code) !== 200000) {
+      console.log("marketBuyOrder", marketBuyOrder)
+      throw new Error("Market Buy Order Failed.")
+    }
+
+    // check balance available
+    await sleep(2000)
+    accounts = await api.getAccounts()
+    const orderAvailableBalance = accountBalance("trade", args.ticker.toUpperCase(), accounts.data)
+    // console.log(orderAvailableBalance)
+
+    const baseIncrement = 4
+
+    // set stop market - loss
+    const stopParams = {
+      clientOid: uuidv4(),
+      side: "sell",
+      stop: "loss",
+      stopPrice: config!.stopLossPrice,
+      symbol,
+      type: "market", // default: limit]
+      size: orderAvailableBalance.toFixed(baseIncrement),
+    }
+    // console.log("Stop Loss Params", stopParams)
+
+    console.log(`==> Placing Stop Loss Market Sell Order: ${symbol} $${config!.stopLossPrice}`)
+    const marketStopLossSellOrder = await api.placeOrder(stopParams)
+    // { code: '200000', data: { orderId: 'vsacuoltshiqav06000s2cb2' } }
+    // console.log("marketStopLossSellOrder", marketStopLossSellOrder)
+
+    if (!marketStopLossSellOrder.code || Number(marketStopLossSellOrder.code) !== 200000) {
+      console.log("Stop Loss Params", stopParams)
+      console.log("Market Stop Loss Sell Order", marketStopLossSellOrder)
+      throw new Error("Market Stop Loss Order Failed.")
+    }
+
+    // set stop market - profit
+
+    await sleep(2000)
+
+    const stopProfitParams = {
+      clientOid: uuidv4(),
+      side: "sell",
+      stop: "entry",
+      stopPrice: config!.targetPrice,
+      symbol,
+      type: "market", // default: limit]
+      size: orderAvailableBalance.toFixed(baseIncrement),
+    }
+    // console.log("Stop Profit Params", stopProfitParams)
+
+    console.log(`==> Placing Stop Profit Market Sell Order: ${symbol} $${config!.targetPrice}`)
+
+    const marketStopProfitSellOrder = await api.placeOrder(stopProfitParams)
+    // { code: '200000', data: { orderId: 'vsacuoltsqr2cv9t000r3vft' } }
+    // console.log("marketStopProfitSellOrder", marketStopProfitSellOrder)
+
+    if (!marketStopProfitSellOrder.code || Number(marketStopProfitSellOrder.code) !== 200000) {
+      console.log("Stop Profit Params", stopParams)
+      console.log("Market Stop Profit Sell Order", marketStopProfitSellOrder)
+      throw new Error("Market Stop Profit Order Failed.")
+    }
   } catch (error) {
     console.log(error)
   }
 })()
-
-// questions.askMany(
-//   {
-//     name: { info: "Name" },
-//     age: { info: "Age" },
-//     phone: { info: "Phone", required: false },
-//   },
-//   function (result: any) {
-//     console.log(result)
-//   }
-// )
-// place market order
-// place stop market - loss
-// place stop market - profit

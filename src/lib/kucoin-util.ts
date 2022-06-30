@@ -5,3 +5,7 @@ export const accountBalance = (type: string, currency: string, data: any[]) => {
   }
   return 0
 }
+
+export const sleep = async (ms: number) => {
+  return new Promise((resolve) => setTimeout(resolve, ms))
+}
