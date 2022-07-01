@@ -2,7 +2,7 @@ import Decimal from "decimal.js"
 import symbolsData from "./symbols.json"
 import { countDecimals } from "./util"
 
-const CAPITAL = 493
+const CAPITAL = 970
 const RISK_PERC = 0.01
 
 export const main = (market: string, entryPrice: number, stopLossPrice: number, targetPrice: number) => {

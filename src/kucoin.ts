@@ -106,6 +106,10 @@ const confirmOrder = async () => {
     const orderAvailableBalance = accountBalance("trade", args.ticker.toUpperCase(), accounts.data)
     // console.log(orderAvailableBalance)
 
+    // TODO cancel any existing orders for this symbol
+    // api.cancelAllOrders({symbol: 'xxxxx'})
+
+    // TODO look this value up from the symbols list
     const baseIncrement = 4
 
     // set stop market - loss
